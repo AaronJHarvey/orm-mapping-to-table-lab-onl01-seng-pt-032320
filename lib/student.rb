@@ -25,7 +25,11 @@ def self.drop_table
   DB[:conn].execute(sql)
 end
 
-def self.create(name: ,grade:)
+def save
   
+end
+
+def self.create(name: ,grade:)
+end  
   
 end
