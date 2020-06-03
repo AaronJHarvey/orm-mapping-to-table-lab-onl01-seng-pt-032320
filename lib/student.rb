@@ -31,7 +31,7 @@ def save
   VALUES (?, ?)
   SQL
   DB[:conn].execute(sql,self.name, self.album)
-  
+  @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
 end
 
 def self.create(name: ,grade:)
