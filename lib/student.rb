@@ -31,6 +31,7 @@ def save
   VALUES (?, ?)
   SQL
   DB[:conn].execute(sql,self.name, self.album)
+  
 end
 
 def self.create(name: ,grade:)
